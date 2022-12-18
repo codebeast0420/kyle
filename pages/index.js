@@ -11,8 +11,10 @@ export default function Home() {
   return (
     <>
       <div className={styles.home}>
-        <Header />
-        <Landing />
+        <div style={{maxWidth: "1374px"}}>
+          <Header />
+          <Landing />
+        </div>
       </div>
     </>
   )

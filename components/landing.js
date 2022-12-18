@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { getHeroSection } from "../src/utils/contentful";
 import Image from "next/image";
+import DotLine from "./dotline";
 
 const Landing = () => {
 	const [heroHeader, setHeroHeader] = useState('');
@@ -13,28 +14,21 @@ const Landing = () => {
 	}, []);
 
 	return (
-		<div style={{ display: "flex" }}>
-			<div className="hero ml-[10%]" style={{ marginTop: "85px", width: '27%', marginLeft: '10%' }}>
-				<h1 className=" " style={{ fontFamily: "Lato", fontSize: "8vh", fontWeight: "900" }}>{heroHeader}</h1>
-				<p style={{ fontFamily: "Jost", fontWeight: "400", fontSize: "18px" }}>{heroSub}</p>
-				<div style={{ height: "300px" }}>
-					<button
-						style={{
-							width: "180px",
-							height: "40px",
-							borderRadius: "4px",
-							backgroundColor: "#1CCADF",
-							marginLeft: "10%",
-							marginTop: "30px",
-							color: "white"
-						}}
-					>
+		<div className="flex">
+			<div className="hero ml-[10%] w-[27%] mt-[85px]">
+				<h1 className="text-[50px] font-semibold" style={{ fontFamily: "Lato" }}>{heroHeader}</h1>
+				<p className="font-normal text-base" style={{ fontFamily: "Jost" }}>{heroSub}</p>
+				<div>
+					<button className="w-[180px] h-[40px] rounded-lg bg-sky-400 mt-[30px] text-white">
 						Join Us Today!
 					</button>
 				</div>
 			</div>
-			<div style={{ width: "40%", marginTop: '40px', marginLeft: '6%' }}>
-				<Image src="/src/img/Group.png" width={570} height={495} alt="main image" />
+			<div className="w-2/5 mt-[20px] ml-[18%] pb-8 z-1">
+				<Image src="/src/img/Group.png" width={530} height={465} alt="main image"/>
+			</div>
+			<div className="absolute mt-[308px] dot-line">
+				<DotLine />
 			</div>
 		</div>
 	);

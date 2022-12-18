@@ -1,5 +1,8 @@
 .home {
   background: linear-gradient(242.14deg, #EAF8FA 0%, #EFFCF7 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .header {
