@@ -4,10 +4,10 @@ import Image from 'next/image';
 const Header = () => {
   return (
     <div className={styles.header}>
-      <div className="ml-[20%]">
-        <Image src="/src/img/smsj.png" width={42} height={60} />
+      <div className="ml-[10%]">
+        <Image src="/src/img/smsj.png" width={42} height={60} alt="logo"/>
       </div>
-      <div style={{ marginLeft: "10px" }}>
+      <div className='ml-[10px]'>
         <svg
           width="121"
           height="36"
