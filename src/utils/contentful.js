@@ -82,4 +82,18 @@ export async function getSessionList() {
 	return data.landingPageSessions;
 }
 
-export default { getHeroSection, getSession, getAboutUs, getWahtYouWillGain, getSessionList };
+export async function getFactAndQuote() {
+	const { data } = await apolloClient.query({
+		query: gql`
+      query GetFactAndQuote {
+				landingPageFactsAndQuotes(id: "5Cx6Vy0dvH25X33xxDswPj") {
+					header
+					description
+				}
+      }
+    `,
+	});
+	return data.landingPageFactsAndQuotes;
+}
+
+export default { getHeroSection, getSession, getAboutUs, getWahtYouWillGain, getSessionList, getFactAndQuote };

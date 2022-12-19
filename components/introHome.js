@@ -5,6 +5,9 @@ import AboutUs from "./aboutUs";
 import WhatWeDo from "./whatWeDo";
 import Session from "./session";
 import Date from "./date";
+import SupportBar from "./supportbar";
+import FactAndQuote from "./factAndQuote";
+import Bottom from "./bottom";
 
 const IntroHome = () => {
 
@@ -41,6 +44,9 @@ const IntroHome = () => {
 			<Image src="/src/img/frame.png" width={winWidth} height={60} alt="frame" className="absolute z-10 top-[950px]" style={{ maxWidth: "1374px" }} />
 			<WhatWeDo />
 			<Session />
+			<SupportBar />
+			<FactAndQuote />
+			<Bottom />
 		</div>
 	)
 }
