@@ -1,4 +1,4 @@
-import { use, useEffect, useState } from "react"
+import { useEffect, useState } from "react"
 import { getWahtYouWillGain } from "../src/utils/contentful"
 import TopicItem from "./topicItem";
 

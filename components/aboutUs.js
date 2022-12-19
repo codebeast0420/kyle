@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { getAboutUs } from "../src/utils/contentful";
 import Image from "next/image";
-import BlueBtn from "./blueBtn";
+import CommonBtn from "./commonBtn";
 
 const AboutUs = () => {
 	const [header, setHeader] = useState('');
@@ -30,7 +30,7 @@ const AboutUs = () => {
 					Planning began in August 2021. The pilot will launch in January 2023 with a goal of 150 students.
 					Additional sessions are scheduled for February and March.
 				</p>
-				<BlueBtn text={"Learn More About Us"} />
+				<CommonBtn text={"Learn More About Us"} />
 			</div>
 			<div className="pl-[3%]">
 				<div className="flex items-start">

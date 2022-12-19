@@ -3,7 +3,7 @@ import { getHeroSection } from "../src/utils/contentful";
 import Image from "next/image";
 import DotLine from "./dotline";
 import IntroHome from "./introHome";
-import BlueBtn from "./blueBtn";
+import CommonBtn from "./commonBtn";
 
 const Landing = () => {
 	const [heroHeader, setHeroHeader] = useState('');
@@ -23,7 +23,7 @@ const Landing = () => {
 				<div className="hero ml-[10%] w-[27%] mt-[85px]">
 					<h1 className="text-[50px] font-semibold" style={{ fontFamily: "Lato" }}>{heroHeader}</h1>
 					<p className="font-normal text-base" style={{ fontFamily: "Jost" }}>{heroSub}</p>
-					<BlueBtn text={"Join Us Today!"} onClick={() => setIntro(true)}/>
+					<CommonBtn text={"Join Us Today!"} onClick={() => setIntro(true)}/>
 				</div>
 				<div className="w-2/5 mt-[20px] ml-[18%] pb-8 z-1">
 					<Image src="/src/img/Group.png" width={530} height={465} alt="main image" />
