@@ -86,7 +86,7 @@ const AboutUs = () => {
 				<TopTitle title={header} />
 				<div className="relative z-[11] pl-[10%] pr-[10%] pt-[80px] flex ">
 					<div className="w-[45%]">
-						<p className="font-medium text-2xl">{studentLeadersHeader}</p>
+						<p className="font-medium text-2xl text-black">{studentLeadersHeader}</p>
 						<div className="mt-[10px] flex justify-evenly flex-wrap ml-[-10px]" >
 							<AboutUsCard />
 							<AboutUsCard />
@@ -101,24 +101,24 @@ const AboutUs = () => {
 						</div>
 					</div>
 					<div className="w-[50%] pl-[10px] mb-[50px]" style={{ borderLeft: "1px solid #D9D9D9" }}>
-						<p className="font-medium text-2xl">{subheading}</p>
+						<p className="font-medium text-2xl text-black">{subheading}</p>
 						{text1.map((text, index) => (
 							<>
-								<p className="mt-[15px]" key={index}>{text}</p>
+								<p className="mt-[15px] text-black" key={index}>{text}</p>
 							</>
 						))}
 						{text2.map((text, index) => (
 							<>
 								{index === 0 && (
-									<p className="mt-[15px] font-medium text-lg">Host Organization:</p>
+									<p className="mt-[15px] font-medium text-lg text-black">Host Organization:</p>
 								)}
-								<p className="mt-[15px]" key={index}>{text}</p>
+								<p className="mt-[15px text-black]" key={index}>{text}</p>
 							</>
 						))}
-						<p className="mt-[15px] font-medium text-lg">{text3[0]}</p>
-						<p className="mt-[15px]">{text4[0]}</p>
-						<p className="mt-[15px]">{text5[0]}</p>
-						<p className="mt-[15px]">{text6[0]}</p>
+						<p className="mt-[15px] font-medium text-lg text-black">{text3[0]}</p>
+						<p className="mt-[15px] text-black">{text4[0]}</p>
+						<p className="mt-[15px] text-black">{text5[0]}</p>
+						<p className="mt-[15px] text-black">{text6[0]}</p>
 					</div>
 				</div>
 				<Bottom />

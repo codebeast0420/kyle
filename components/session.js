@@ -18,8 +18,8 @@ const Session = () => {
 		<div className="pt-[100px] pl-[10%] pr-[10%] pb-[100px]">
 			<div className="flex">
 				<div>
-					<p className="text-lg">{preHeader}</p>
-					<p className="text-3xl font-bold mt-[5px]">{header}</p>
+					<p className="text-lg text-black">{preHeader}</p>
+					<p className="text-3xl font-bold mt-[5px] text-black">{header}</p>
 				</div>
 				<div className="text-black flex  ml-[20%]">
 					<CommonBtn text={"Upcoming Sessions"} pdSmall={true} />
