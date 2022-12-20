@@ -32,7 +32,7 @@ const Landing = () => {
 					<DotLine />
 				</div>
 			</div>
-			{intro === true && (<IntroHome />)}
+			<IntroHome />
 		</div>
 
 	);

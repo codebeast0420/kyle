@@ -39,6 +39,11 @@ export async function getAboutUs() {
 					header
 					studentLeadersHeader
 					subheading
+					studentLeadersCollection{
+						items {
+							name
+						}
+					}
 					body {
 						json
 					}
@@ -95,5 +100,6 @@ export async function getFactAndQuote() {
 	});
 	return data.landingPageFactsAndQuotes;
 }
+
 
 export default { getHeroSection, getSession, getAboutUs, getWahtYouWillGain, getSessionList, getFactAndQuote };

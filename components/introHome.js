@@ -13,7 +13,6 @@ const IntroHome = () => {
 
 	const [sessionTitle, setSessionTitle] = useState('');
 	const [sessionData, setSessionData] = useState('');
-	const winWidth = window.innerWidth;
 
 	useEffect(() => {
 		getSession().then((res) => {
@@ -41,7 +40,7 @@ const IntroHome = () => {
 				<div className="w-1/4 h-[50px] bg-[#142630] mt-[-25px] mb-[200px]"></div>
 			</div>
 			<AboutUs />
-			<Image src="/src/img/frame.png" width={winWidth} height={60} alt="frame" className="absolute z-10 top-[950px]" style={{ maxWidth: "1374px" }} />
+			<Image src="/src/img/frame.png" width={1374} height={60} alt="frame" className="absolute z-10 top-[950px]" style={{ maxWidth: "1374px" }} />
 			<WhatWeDo />
 			<Session />
 			<SupportBar />
