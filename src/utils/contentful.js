@@ -5,7 +5,7 @@ export async function getHeroSection() {
 	const { data } = await apolloClient.query({
 		query: gql`
       query GetHeroSection {
-        heroSection(id: "1yzJwEvqxQhu9PBltUAnyR") {
+        heroSection(id: "${process.env.NEXT_PUBLIC_HERO_SECTION_ID}") {
           header
 					subtext
         }
@@ -19,7 +19,7 @@ export async function getSession() {
 	const { data } = await apolloClient.query({
 		query: gql`
       query GetSession {
-        session(id: "75XEz0EeLJcugnDz1gtct6") {
+        session(id: "${process.env.NEXT_PUBLIC_SECTION_ID}") {
           title
 					description {
 						json
@@ -35,7 +35,7 @@ export async function getAboutUs() {
 	const { data } = await apolloClient.query({
 		query: gql`
       query GetAboutUs {
-				aboutUs(id: "2xp1jbeqrk2m6QxlAfJgYR") {
+				aboutUs(id: "${process.env.NEXT_PUBLIC_ABOUT_US_ID}") {
 					header
 					studentLeadersHeader
 					subheading
@@ -58,7 +58,7 @@ export async function getWahtYouWillGain() {
 	const { data } = await apolloClient.query({
 		query: gql`
       query GetWhatYouWillGain {
-				landingPageWhatYouWillGain(id: "3kfCXrGNjGFKAZZ3ASMd8R") {
+				landingPageWhatYouWillGain(id: "${process.env.NEXT_PUBLIC_LANDING_WHATYOUWILLGAIN_ID}") {
 					preHeader
 					header
 					body {
@@ -77,7 +77,7 @@ export async function getSessionList() {
 	const { data } = await apolloClient.query({
 		query: gql`
       query GetSessionList {
-				landingPageSessions(id: "2PNPQcNJtVPJH2Rjtm8RWx") {
+				landingPageSessions(id: "${process.env.NEXT_PUBLIC_LANDING_SESSIONS_ID}") {
 					preHeader
 					header
 				}
@@ -91,7 +91,7 @@ export async function getFactAndQuote() {
 	const { data } = await apolloClient.query({
 		query: gql`
       query GetFactAndQuote {
-				landingPageFactsAndQuotes(id: "5Cx6Vy0dvH25X33xxDswPj") {
+				landingPageFactsAndQuotes(id: "${process.env.NEXT_PUBLIC_LANDING_FACTSANDQUOTES_ID}") {
 					header
 					description
 				}

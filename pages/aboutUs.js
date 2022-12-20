@@ -110,9 +110,11 @@ const AboutUs = () => {
 						{text2.map((text, index) => (
 							<>
 								{index === 0 && (
-									<p className="mt-[15px] font-medium text-lg text-black">Host Organization:</p>
+									<p className="mt-[15px] font-medium text-lg text-black" key={index}>Host Organization:</p>
 								)}
-								<p className="mt-[15px text-black]" key={index}>{text}</p>
+								{index !== 0 && (
+									<p className="mt-[15px] text-black" key={index}>{text}</p>
+								)}
 							</>
 						))}
 						<p className="mt-[15px] font-medium text-lg text-black">{text3[0]}</p>
